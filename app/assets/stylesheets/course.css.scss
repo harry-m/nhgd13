@@ -51,35 +51,55 @@
       list-style-type: none;
       margin-bottom: 20px;
       line-height: 30px;
-      padding: 20px;
+      padding: 25px;
       background-color: gray;
+      float: left;
 
       h4 {
         font-size: 25px;
         font-family: 'Lato', serif;
         font-weight: 300;
         color:  #1F5F61;
+        margin-top: 0px;
        }
 
+      .stuff-link {
+        background-color: #1F5F61;
+        padding: 2px 14px;
+        color: #fff;
+        float:right;
+        font-family: 'Sanchez', serif;
+        font-size: 20px;
+
+        &:hover {
+          text-decoration: none;
+          background-color: #000000;
+        }
+
+      }
     }
   }
 }
 
 .salary {
-  font-size: 1.6em;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .range {
   font-style: italic;
+  font-size: 20px;
 }
 
 h4 .institution {
-  font-size: 0.9em;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: 900;
   display: block;
+  margin: 10px 0px 20px 0px;
 }
 
 .row.strap {
   font-size: 1.4em;
 }
+
 

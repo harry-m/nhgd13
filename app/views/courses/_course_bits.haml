@@ -1,12 +1,13 @@
 %li
-  %h4
-    =course.title
-    %span.institution #{course.institution.name} (Dropouts: #{course.institution.dropout_rate}%)
-  %p
-    %span.salary #{number_to_currency(course.the_salary.instmed, {:unit => '£', :precision => 0})} 
-    %span.range 
-      (#{number_to_currency(course.the_salary.instlq, {:unit => '£', :precision => 0})}&mdash;
-      #{number_to_currency(course.the_salary.instuq, {:unit => '£', :precision => 0})})
+  .span4
+    %h4
+      =course.title
+      %span.institution #{course.institution.name} (Dropouts: #{course.institution.dropout_rate}%)
+    %p
+      %span.salary #{number_to_currency(course.the_salary.instmed, {:unit => '£', :precision => 0})}
+      %span.range
+        (#{number_to_currency(course.the_salary.instlq, {:unit => '£', :precision => 0})}&mdash;
+        #{number_to_currency(course.the_salary.instuq, {:unit => '£', :precision => 0})})
 
-  %p
-    %a{:href => course.course_url} Show me where the stuff at &raquo;
+  .span1
+    %a.stuff-link{:href => course.course_url} i
