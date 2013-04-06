@@ -19,4 +19,6 @@
   .span1
     %a.stuff-link{:href => course.course_url} i
     - if course.the_salary.instmed < 17800
-      %a.danger-link{:href => '#'} !
+      %a.danger-link{:href => '#'}
+        %span.icon !
+        %span.text This is less than the average salary of people who didn't go to university.

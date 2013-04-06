@@ -84,10 +84,27 @@
         font-family: 'Sanchez', serif;
         font-size: 20px;
         border-radius: 5px;
+      }
 
+      .stuff-link {
         &:hover {
           text-decoration: none;
           background-color: #000000;
+        }
+      }
+
+      a.danger-link {
+        display: inline-block; 
+        line-height: 20px;
+
+        &:hover { text-decoration: none; }
+
+        span.text { display: none; }
+        span.icon { display: inline; float: right; padding: 6px 0px; }
+
+        &.open, &.open:hover {
+          width: 300px;
+          span.text { display: inline-block; padding: 5px 0 7px; width: 260px; }
         }
       }
 

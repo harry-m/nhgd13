@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(document).ready(function() {
+  $('a.danger-link').mouseover(function() {
+    $(this).addClass('open');
+  }); 
+  $('a.danger-link').mouseout(function() {
+    $(this).removeClass('open');
+  }); 
+  $('a.danger-link').click(function(e){
+    e.preventDefault();
+  })
+});
