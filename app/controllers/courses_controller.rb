@@ -5,7 +5,7 @@ class CoursesController < ApplicationController
   end
 
   def results
-    courses = Course.withsalary.where('title like ?', "%#{params[:terms]}%").limit(10)
+    courses = Course.withsalary.where('title like "%' + params[:terms].split(/\s/).join('%" and title like "%') + '%"').limit(10)
 
     @top_courses    = courses.order("instmed desc").all.sort{|a,b| b.the_salary.instmed <=> a.the_salary.instmed}
     @bottom_courses = courses.order("instmed asc").all.sort{|a,b| a.the_salary.instmed <=> b.the_salary.instmed}
