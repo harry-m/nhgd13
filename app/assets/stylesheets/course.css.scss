@@ -41,14 +41,14 @@
 .great, .shit {
 
   ol {
-    margin: 0px 0px 0px 30px;
-    font-size: 25px;
+    margin: 0px;
     font-family: 'Lato', serif;
     font-weight: 300;
     color:  #1F5F61;
     line-height: 30px;
 
     li {
+      list-style-type: none;
       margin-bottom: 20px;
       line-height: 30px;
       padding: 20px;
