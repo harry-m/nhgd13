@@ -11,11 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406100941) do
+ActiveRecord::Schema.define(:version => 20130406101538) do
+
+  create_table "courses", :force => true do |t|
+    t.string   "record_id"
+    t.integer  "parent_id"
+    t.string   "course_id"
+    t.integer  "kistype"
+    t.string   "title"
+    t.string   "course_url"
+    t.string   "ucas_code"
+    t.string   "fee_variation"
+    t.boolean  "fees_confirmed"
+    t.integer  "fee_england"
+    t.integer  "fee_scotland"
+    t.integer  "fee_ni"
+    t.integer  "fee_wales"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "salaries", :force => true do |t|
-    t.integer  "record_id"
-    t.integer  "parent_id"
+    t.integer  "course_id"
     t.integer  "pop"
     t.integer  "agg"
     t.string   "sbj"
