@@ -11,11 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406100941) do
+ActiveRecord::Schema.define(:version => 20130406101538) do
 
   create_table "salaries", :force => true do |t|
-    t.integer  "record_id"
-    t.integer  "parent_id"
+    t.integer  "course_id"
     t.integer  "pop"
     t.integer  "agg"
     t.string   "sbj"
