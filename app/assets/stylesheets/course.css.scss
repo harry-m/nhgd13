@@ -65,6 +65,12 @@
   }
 }
 
+$colours: red, lime, yellow, purple, green, crimson, blue, violet, coral, cyan;
+@for $i from 1 through 10 {
+  .great li:nth-child(#{$i}) { background-color: nth($colours, $i);    }
+  .shit li:nth-child(#{11 - $i}) { background-color: nth($colours, $i);    }
+}
+
 .salary {
   font-size: 1.6em;
 }
