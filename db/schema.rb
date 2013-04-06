@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406112135) do
+ActiveRecord::Schema.define(:version => 20130406115654) do
+
+  create_table "accreditations", :force => true do |t|
+    t.integer  "course_id"
+    t.string   "text"
+    t.integer  "accbodyid"
+    t.string   "accurl"
+    t.boolean  "accdepend"
+    t.string   "accdependurl"
+    t.string   "accdependurlw"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "courses", :force => true do |t|
     t.integer  "parent_id"
@@ -28,6 +40,28 @@ ActiveRecord::Schema.define(:version => 20130406112135) do
     t.integer  "fee_wales"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "employments", :force => true do |t|
+    t.integer  "course_id"
+    t.integer  "pop"
+    t.integer  "agg"
+    t.integer  "sbj"
+    t.integer  "workstudy"
+    t.integer  "assunemp"
+    t.integer  "both"
+    t.integer  "noavail"
+    t.integer  "study"
+    t.integer  "work"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "institutions", :force => true do |t|
+    t.integer  "ukprn"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "jobs", :force => true do |t|
