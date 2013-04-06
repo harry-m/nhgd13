@@ -1,9 +1,13 @@
 .row
+  .span12
+    %h1 University courses with top salaries
+    %p Find out where to study something, if you'd like moar moneh.
+.row
   .span6
     %h3 Great courses
     %ul
-      - @top_results.each do |result|
-        = render :partial => 'course_bits', :locals => {:result => result}
+      - @top_courses.each do |course|
+        = render :partial => 'course_bits', :locals => {:course => course}
 
   .span6
     %h3.strike
@@ -11,5 +15,5 @@
     %h3
       Courses which may not offer acceptable return on your investment
     %ul
-      - @bottom_results.each do |result|
-        = render :partial => 'course_bits', :locals => {:result => result}
+      - @bottom_courses.each do |course|
+        = render :partial => 'course_bits', :locals => {:course => course}

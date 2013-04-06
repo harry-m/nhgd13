@@ -18,10 +18,6 @@
     #main{:role => "main"}
       .container
         .content
-          .row
-            .span12
-              %h1 University courses with top salaries
-              %p Find out where to study something, if you'd like moar moneh.
-              = render 'layouts/messages'
-              = yield
-          %footer
+          = render 'layouts/messages'
+          = yield
+    %footer
