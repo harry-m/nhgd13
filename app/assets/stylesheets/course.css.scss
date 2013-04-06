@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .search-form {
-  background-color: #547980;
+  background-color: #1F5F61;
   padding: 30px;
-  margin-top: 50px;
+  margin-top: 90px;
   border-radius: 5px;
 
     label {
@@ -15,17 +15,58 @@
 
       h2 {
         margin: 0px;
+        color: #fff;
       }
     }
 
     input {
       float:right;
-      margin-top: 5px;
+      padding: 10px 15px;
+      margin: 0px;
     }
 
     input[type="text"] {
       width: 470px;
+      background-color: #292929;
+      border: 0px;
+      color: #fff;
     }
+
+    input[type="submit"] {
+      width: 170px;
+    }
+}
+
+
+.great, .shit {
+  padding: 25px;
+  background-color: #000000;
+
+  ol {
+    margin: 0px 0px 0px 30px;
+    font-size: 25px;
+    font-family: 'Lato', serif;
+    font-weight: 300;
+    color:  #1F5F61;
+    line-height: 30px;
+
+    li {
+      margin-bottom: 20px;
+      line-height: 30px;
+
+      strong {
+        font-size: 25px;
+        font-family: 'Lato', serif;
+        font-weight: 300;
+        color:  #1F5F61;
+       }
+
+        em {
+          color: gray;
+        }
+
+    }
+  }
 }
 
 .salary {
@@ -45,3 +86,4 @@ h4 .institution {
 .row.strap {
   font-size: 1.4em;
 }
+
