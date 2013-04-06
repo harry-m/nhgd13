@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  recordId: 1
+  parentId: 1
+
+two:
+  recordId: 1
+  parentId: 1
