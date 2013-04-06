@@ -73,7 +73,7 @@
         margin-bottom: 0px;
       }
 
-      .stuff-link {
+      .stuff-link, .danger-link {
         background-color: #1F5F61;
         padding: 2px 14px;
         color: #fff;
@@ -85,7 +85,13 @@
           text-decoration: none;
           background-color: #000000;
         }
+      }
 
+      .danger-link {
+        background-color: rgb(223, 70, 70);
+        margin-right: 2px;
+        font-family: lato;
+        font-size: 95%;
       }
     }
   }

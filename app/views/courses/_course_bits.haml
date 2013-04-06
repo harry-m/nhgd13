@@ -21,3 +21,5 @@
 
   .span1
     %a.stuff-link{:href => course.course_url} i
+    - if course.the_salary.instmed < 17800
+      %a.danger-link{:href => '#'} !
