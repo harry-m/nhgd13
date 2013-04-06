@@ -1,7 +1,10 @@
-%form{:action => '/courses/results', :method => :get}
-  %label  
-    %h1 What do you want to study?
-    %input{:type => :text, :name => 'terms'}
-
-  %input{:type => :submit, :value => 'Where shall I study?'}
+.row
+  .span12.search-form
+    %form{:action => '/courses/results', :method => :get}
+      %label.span5
+        %h2 What do you want to study?
+      .span5
+        %input{:type => :text, :name => 'terms'}
+      .span2
+        %input.btn{:type => :submit, :value => 'Where shall I study?'}
 

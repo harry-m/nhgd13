@@ -1,3 +1,29 @@
 // Place all the styles related to the course controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search-form {
+  background-color: #547980;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+
+    label {
+      margin: 0px 0px 0px 0px;
+      display: inline;
+      float:left;
+
+      h2 {
+        margin: 0px;
+      }
+    }
+
+    input {
+      float:right;
+      margin-top: 5px;
+    }
+
+    input[type="text"] {
+      width: 470px;
+    }
+}
