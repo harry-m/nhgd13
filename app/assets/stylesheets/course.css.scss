@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .search-form {
-  background-color: #1F5F61;
+  background-color: #26ADE4;
   padding: 30px;
   margin-top: 90px;
   border-radius: 5px;
@@ -47,7 +47,7 @@
     margin: 0px;
     font-family: 'Lato', serif;
     font-weight: 300;
-    color:  #181818;
+    color:  #000;
     line-height: 30px;
 
     li {
@@ -57,9 +57,11 @@
       padding: 25px;
       background-color: gray;
       float: left;
+      width: 90%;
 
       .span4 {
         margin-left: 0px;
+        width: 400px;
       }
 
       h4 {
@@ -74,7 +76,7 @@
       }
 
       .stuff-link {
-        background-color: #1F5F61;
+        background-color: #26ADE4;
         padding: 2px 14px;
         color: #fff;
         float:right;
@@ -119,6 +121,6 @@ h4 .institution {
 }
 
 .great-title, .shit-title {
-  color: #1F5F61;
-  font-size: 24px;
+  color: #26ADE4;
+  font-size: 30px;
 }
