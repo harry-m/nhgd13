@@ -11,3 +11,14 @@
       .span2
         %input.btn.btn-inverse{:type => :submit, :value => 'Where shall I study?'}
 
+.row
+  .span6.course-list
+    %h2 Overall top salaries
+    %ol
+      - @top_salaries.all.each do |salary|
+        = render :partial => 'course_bits', :locals => {:course => salary.course}
+  .span6.course-list
+    %h2 Overall worst salaries
+    %ol
+      - @bottom_salaries.all.each do |salary|
+        = render :partial => 'course_bits', :locals => {:course => salary.course}

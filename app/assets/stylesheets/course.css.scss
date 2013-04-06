@@ -58,6 +58,7 @@
       background-color: gray;
       float: left;
       width: 90%;
+      border-radius: 5px;
 
       .span4 {
         margin-left: 0px;
@@ -75,19 +76,27 @@
         margin-bottom: 0px;
       }
 
-      .stuff-link {
+      .stuff-link, .danger-link {
         background-color: #26ADE4;
         padding: 2px 14px;
         color: #fff;
         float:right;
         font-family: 'Sanchez', serif;
         font-size: 20px;
+        border-radius: 5px;
 
         &:hover {
           text-decoration: none;
           background-color: #000000;
         }
+      }
 
+      .danger-link {
+        background-color: rgb(223, 70, 70);
+        margin: 5px 0px 0px 10px;
+        font-family: lato;
+        font-size: 95%;
+        font-weight: bold;
       }
     }
   }
