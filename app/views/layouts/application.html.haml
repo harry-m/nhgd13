@@ -18,11 +18,9 @@
     #main{:role => "main"}
       .container
         .content
+          = render 'layouts/messages'
           .row
-            .span12.content-container
-              %h1 University courses with top salaries
-              %p.intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque congue lacus iaculis iaculis. Suspendisse augue eros, pharetra vel faucibus vel, gravida nec nunc. Quisque felis felis, commodo nec pretium a, dictum quis turpis. Morbi at diam a augue ullamcorper scelerisque. Sed ante diam, iaculis et blandit in, vehicula nec lectus. Phasellus vehicula consectetur libero a ornare.
-              = render 'layouts/messages'
-              = yield
-          %footer
-
+            .span12
+              %h1 University course salaries
+          = yield
+    %footer
