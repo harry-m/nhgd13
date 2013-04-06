@@ -38,7 +38,7 @@
 }
 
 .row.strap {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .great, .shit {
@@ -91,6 +91,10 @@
         }
       }
 
+      p.average {
+        margin: -10px 0 0;
+      }
+
       .danger-link {
         background-color: rgb(223, 70, 70);
         margin: 5px 0px 0px 10px;
@@ -115,7 +119,7 @@ $colours: #FFFFFF, #E5F0F3, #CCE1E7, #B3D3DC, #9AC4D0, #81B6C5, #68A7B9, #4F98AD
 
 .range {
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .ofaverage {
