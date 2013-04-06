@@ -1,0 +1,16 @@
+.row
+  .span5
+    %h3 Great places
+    %ul
+      - @top_results.each do |result|
+        %li
+          %strong=result.title
+          %p Starting salary: #{result.the_salary.instmed} (#{result.the_salary.instlq}&mdash;#{result.the_salary.instuq})
+
+  .span5
+    %h3 Crap places
+    %ul
+      - @bottom_results.each do |result|
+        %li
+          %strong=result.title
+          %p Starting salary: #{result.the_salary.instmed} (#{result.the_salary.instlq}&mdash;#{result.the_salary.instuq})
