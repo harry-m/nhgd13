@@ -1,5 +1,7 @@
 class CoursesController < ApplicationController
   def find
+    @top_salaries = Salary.order("instmed desc").includes(:course).includes(:institution).limit(10)
+    @bottom_salaries = Salary.order("instmed asc").includes(:course).includes(:institution).limit(10)
   end
 
   def results
