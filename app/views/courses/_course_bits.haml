@@ -1,7 +1,7 @@
 %li
   %h4
     =course.title
-    %span.institution=course.institution.name
+    %span.institution #{course.institution.name} (Dropouts: #{course.institution.dropout_rate}%)
   %p
     %span.salary #{number_to_currency(course.the_salary.instmed, {:unit => '£', :precision => 0})} 
     %span.range 
