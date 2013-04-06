@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406105035) do
+ActiveRecord::Schema.define(:version => 20130406112135) do
 
   create_table "courses", :force => true do |t|
-    t.string   "record_id"
     t.integer  "parent_id"
     t.string   "course_id"
     t.integer  "kistype"
