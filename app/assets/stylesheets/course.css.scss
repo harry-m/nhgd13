@@ -39,8 +39,6 @@
 
 
 .great, .shit {
-  padding: 25px;
-  background-color: #000000;
 
   ol {
     margin: 0px 0px 0px 30px;
@@ -53,17 +51,15 @@
     li {
       margin-bottom: 20px;
       line-height: 30px;
+      padding: 20px;
+      background-color: gray;
 
-      strong {
+      h4 {
         font-size: 25px;
         font-family: 'Lato', serif;
         font-weight: 300;
         color:  #1F5F61;
        }
-
-        em {
-          color: gray;
-        }
 
     }
   }

@@ -2,13 +2,14 @@
   .span12
     %h1 University course salaries
     %p.strap Find out where to study something, if you'd like moar moneh.
+
 .row
   .span6
     %h3 Great courses
     .great
       %ol
         - @top_courses.each do |course|
-        = render :partial => 'course_bits', :locals => {:course => course}
+          = render :partial => 'course_bits', :locals => {:course => course}
 
 
   .span6
@@ -18,7 +19,6 @@
       Courses which may not offer acceptable return on your investment
     .shit
       %ol
-        .ol-wrapper
-          - @bottom_courses.each do |course|
+        - @bottom_courses.each do |course|
           = render :partial => 'course_bits', :locals => {:course => course}
 
