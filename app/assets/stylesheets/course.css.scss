@@ -37,6 +37,9 @@
     }
 }
 
+.row.strap {
+  margin-bottom: 80px;
+}
 
 .great, .shit {
 
@@ -44,7 +47,7 @@
     margin: 0px;
     font-family: 'Lato', serif;
     font-weight: 300;
-    color:  #1F5F61;
+    color:  #181818;
     line-height: 30px;
 
     li {
@@ -55,13 +58,20 @@
       background-color: gray;
       float: left;
 
+      .span4 {
+        margin-left: 0px;
+      }
+
       h4 {
         font-size: 25px;
         font-family: 'Lato', serif;
         font-weight: 300;
-        color:  #1F5F61;
         margin-top: 0px;
        }
+
+      p {
+        margin-bottom: 0px;
+      }
 
       .stuff-link {
         background-color: #1F5F61;
@@ -79,6 +89,12 @@
       }
     }
   }
+}
+
+$colours: #FFFFFF, #F0F0F0, #E0E0E0, #D8D8D8, #D0D0D0, #C8C8C8, #C0C0C0, #B0B0B0, #A0A0A0, #909090;
+@for $i from 1 through 10 {
+  .great li:nth-child(#{$i}) { background-color: nth($colours, $i);    }
+  .shit li:nth-child(#{11 - $i}) { background-color: nth($colours, $i);    }
 }
 
 .salary {
@@ -102,4 +118,7 @@ h4 .institution {
   font-size: 1.4em;
 }
 
-
+.great-title, .shit-title {
+  color: #1F5F61;
+  font-size: 24px;
+}

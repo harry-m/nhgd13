@@ -4,7 +4,7 @@
 
 .row
   .span6
-    %h3 Great courses
+    %h3.great-title Great courses
     .great
       %ol
         - @top_courses.each do |course|
@@ -12,10 +12,10 @@
 
 
   .span6
-    %h3.strike
-      Shit courses
-    %h4
-      Courses which may not offer acceptable return on your investment
+    %h3.shit-title
+      %strike
+        Shit
+      low paying courses
     .shit
       %ol
         - @bottom_courses.each do |course|

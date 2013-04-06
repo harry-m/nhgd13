@@ -2,7 +2,10 @@
   .span4
     %h4
       =course.title
-      %span.institution #{course.institution.name} (Dropouts: #{course.institution.dropout_rate}%)
+      %span.institution
+        #{course.institution.name}
+        - if course.institution.dropout_rate.present?
+          (Dropouts: #{course.institution.dropout_rate}%)
     %p
       %span.salary #{number_to_currency(course.the_salary.instmed, {:unit => '£', :precision => 0})}
       %span.range
