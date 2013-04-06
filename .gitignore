@@ -16,3 +16,6 @@
 
 # Ignore data
 /lib/data
+
+# Ignore mac nonsense
+.DS_Store
