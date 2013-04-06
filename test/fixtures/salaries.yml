@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  record_id: 1
+  parent_id: 1
+  pop: 1
+  agg: 1
+  sbj: MyString
+  ldlq: 1
+  ldmed: 1
+  lduq: 1
+  lq: 1
+  med: 1
+  uq: 1
+  instlq: 1
+  instmed: 1
+  instuq: 1
+
+two:
+  record_id: 1
+  parent_id: 1
+  pop: 1
+  agg: 1
+  sbj: MyString
+  ldlq: 1
+  ldmed: 1
+  lduq: 1
+  lq: 1
+  med: 1
+  uq: 1
+  instlq: 1
+  instmed: 1
+  instuq: 1
