@@ -1,16 +1,15 @@
 .row
-  .span5
-    %h3 Great places
+  .span6
+    %h3 Great courses
     %ul
       - @top_results.each do |result|
-        %li
-          %strong=result.title
-          %p Starting salary: #{result.the_salary.instmed} (#{result.the_salary.instlq}&mdash;#{result.the_salary.instuq})
+        = render :partial => 'course_bits', :locals => {:result => result}
 
-  .span5
-    %h3 Crap places
+  .span6
+    %h3.strike
+      Shit courses
+    %h3
+      Courses which may not offer acceptable return on your investment
     %ul
       - @bottom_results.each do |result|
-        %li
-          %strong=result.title
-          %p Starting salary: #{result.the_salary.instmed} (#{result.the_salary.instlq}&mdash;#{result.the_salary.instuq})
+        = render :partial => 'course_bits', :locals => {:result => result}

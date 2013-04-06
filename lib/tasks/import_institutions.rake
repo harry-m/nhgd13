@@ -2,7 +2,7 @@ require 'csv'
 
 desc "Import institutions"
 task :import_institutions, [:csv_path, :name_csv_path] => :environment do |t, args|
-  if args[:csv_path].blank?
+  if args[:csv_path].blank? or args[:name_csv_path].blank?
     puts "Usage:\n\trake import_institutions[path/to/institutions.csv,path/to/institution-titles.csv]\n" 
     break
   end
