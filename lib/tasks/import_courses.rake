@@ -4,7 +4,7 @@ task :import_courses => :environment do
   puts "Importing courses..."
   CSV.foreach(Rails.root.join("lib","data","KISCOURSE.csv"), :headers => true) do |row|
     c = Course.new(
-      :record_id => row['recordId'],
+      :id => row['recordId'],
       :parent_id => row['parentId'],
       :course_id => row['KISCOURSEID'],
       :kistype => row['KISTYPE'],
