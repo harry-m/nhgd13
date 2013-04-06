@@ -87,6 +87,10 @@
         }
       }
 
+      p.average {
+        margin: -10px 0 0;
+      }
+
       .danger-link {
         background-color: rgb(223, 70, 70);
         margin-right: 2px;
@@ -110,7 +114,7 @@ $colours: #FFFFFF, #F0F0F0, #E0E0E0, #D8D8D8, #D0D0D0, #C8C8C8, #C0C0C0, #B0B0B0
 
 .range {
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .ofaverage {
