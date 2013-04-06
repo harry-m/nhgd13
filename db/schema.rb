@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406115654) do
+ActiveRecord::Schema.define(:version => 20130406115946) do
 
   create_table "accreditations", :force => true do |t|
     t.integer  "course_id"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20130406115654) do
   end
 
   create_table "courses", :force => true do |t|
-    t.integer  "parent_id"
+    t.integer  "institution_id"
     t.string   "course_id"
     t.integer  "kistype"
     t.string   "title"
