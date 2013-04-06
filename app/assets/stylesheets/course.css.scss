@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .search-form {
-  background-color: #26ADE4;
+  background-color: #046D8B;
   padding: 30px;
   margin: 60px auto;
   border-radius: 5px;
@@ -57,7 +57,7 @@
       padding: 25px;
       background-color: gray;
       float: left;
-      width: 90%;
+      width: 89%;
       border-radius: 5px;
 
       .span4 {
@@ -77,7 +77,7 @@
       }
 
       .stuff-link, .danger-link {
-        background-color: #26ADE4;
+        background-color: #0e5265;
         padding: 2px 14px;
         color: #fff;
         float:right;
@@ -102,7 +102,7 @@
   }
 }
 
-$colours: #FFFFFF, #F0F0F0, #E0E0E0, #D8D8D8, #D0D0D0, #C8C8C8, #C0C0C0, #B0B0B0, #A0A0A0, #909090;
+$colours: #FFFFFF, #E5F0F3, #CCE1E7, #B3D3DC, #9AC4D0, #81B6C5, #68A7B9, #4F98AD, #368AA2, #1D7B96;
 @for $i from 1 through 10 {
   .great li:nth-child(#{$i}) { background-color: nth($colours, $i);    }
   .shit li:nth-child(#{11 - $i}) { background-color: nth($colours, $i);    }
@@ -135,6 +135,6 @@ h4 .institution {
 }
 
 .great-title, .shit-title {
-  color: #26ADE4;
   font-size: 30px;
+  margin-bottom: 20px;
 }
