@@ -12,6 +12,13 @@
         (#{number_to_currency(course.the_salary.instlq, {:unit => '£', :precision => 0})}&mdash;
         #{number_to_currency(course.the_salary.instuq, {:unit => '£', :precision => 0})})
 
+      %span.ofaverage
+      - if course.the_salary.instmed >= 21326
+        +#{(course.the_salary.instmed*100/21326)-100}% UK average
+      -else
+        #{(course.the_salary.instmed*100/21326)-100}% UK average
+	
+
   .span1
     %a.stuff-link{:href => course.course_url} i
     - if course.the_salary.instmed < 17800

@@ -5,7 +5,7 @@
 .search-form {
   background-color: #26ADE4;
   padding: 30px;
-  margin-top: 90px;
+  margin: 60px auto;
   border-radius: 5px;
 
     label {
@@ -116,6 +116,11 @@ $colours: #FFFFFF, #F0F0F0, #E0E0E0, #D8D8D8, #D0D0D0, #C8C8C8, #C0C0C0, #B0B0B0
 .range {
   font-style: italic;
   font-size: 20px;
+}
+
+.ofaverage {
+  font-size: 1.0em;
+  font-style: bold;
 }
 
 h4 .institution {
