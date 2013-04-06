@@ -3,8 +3,8 @@ class CoursesController < ApplicationController
   end
 
   def results
-    results = Course.withsalary.where('title like ?', "%#{params[:terms]}%").limit(10)
-    @top_results    = results.order("instmed desc")
-    @bottom_results = results.order("instmed asc")
+    courses = Course.withsalary.where('title like ?', "%#{params[:terms]}%").limit(10)
+    @top_courses    = courses.order("instmed desc")
+    @bottom_courses = courses.order("instmed asc")
   end
 end
